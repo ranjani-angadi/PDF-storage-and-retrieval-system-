@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Book</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+<h2>Upload PDF Book</h2>
+
+<form method="POST"
+      enctype="multipart/form-data">
+
+<input type="text"
+       name="title"
+       placeholder="Book Title">
+
+<input type="text"
+       name="author"
+       placeholder="Author">
+
+<input type="text"
+       name="category"
+       placeholder="Category">
+
+<input type="file"
+       name="pdf">
+
+<button>Upload</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
